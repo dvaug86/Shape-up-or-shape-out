@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shape up or Ship out</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+    <header class="header">Shape Up or Shape Out</header>
+    <div class="container_1">
+        <div class="input_div">
+            <div class="shape" id="rectangle">
+                <form class="forms">
+                    <header class="shapeHeader">Rectangle</header>
+                    <p><input id="rect_Width" type="text" min="0" placeholder="Width"></p>
+                    <p><input id="rect_Height" type="text" min="0" placeholder="Height"></p>
+                    <p><button class=" myButton" id="rect_Button" type="button">Create a Rectangle</button></p>
+                </form>
+            </div>
+            <div class="shape" id="square">
+                <form class="forms">
+                    <header class="shapeHeader">Square</header>
+                    <p><input id="sq_Length" name="sq_Length" type="text" min="0" placeholder="Length"></p>
+                    <p><button class=" myButton" id="sq_Button" type="button">Create a Square</button></p>
+                </form>
+            </div>
+            <div class="shape" id="circle">
+                <form class="forms">
+                    <header class="shapeHeader">Circle</header>
+                    <p><input id="circ_Radius" name="circ_Radius" type="text" min="0" placeholder="Radius"></p>
+                    <p><button class=" myButton" id="circ_Button" type="button">Create a Circle</button></p>
+                </form>
+            </div>
+            <div class="shape" id="Triangle">
+                <form class="forms">
+                    <header class="shapeHeader">Triangle</header>
+                    <p><input id="tri_Heigh" name="tri_Height" type="text" min="0" placeholder="Height"></p>
+                    <p><button class=" myButton" id="tri_Button" type="button">Create a Triangle</button></p>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="container_2">
+        <div class="drawing_board"></div>
+
+        <div class="shape_Info">
+            <P><header class="info_Header">Shape Information</header></P>
+            <p class="property">Shape Type: <span id="shape_Type"></span></p>
+            <p class="property">Width: <span id="shape_Width"></span></p>
+            <p class="property">Height: <span id="shape_Height"></span></p>
+            <p class="property">Radius: <span id="shape_Radius"></span></p>
+            <p class="property">Area: <span id="shape_Area"></span></p>
+            <p class="property">Perimeter: <span id="shape_Perimeter"></span></p>
+
+        </div>
+    </div>
+
+    <!--JavaScript Dependencies from code.jquery.com-->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="apps.js"></script>
+</body>
+
+</html>
