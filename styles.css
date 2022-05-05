@@ -23,6 +23,7 @@
     background-color: magenta;
 }
 .drawing_board{
+    position: relative;
     height: 600px;
     width: 600px;
     background-color: black;
@@ -35,23 +36,41 @@
 }
 .container_2{
     display: flex;
-    text-align: center;
+    align-items: center;
     justify-content: center;
     margin: 1em;
 }
 .shape_Info{
-    height: 350px;
+    height: auto;
     border: 5px solid black;
     padding: 1em;
-    margin-top: 125px;
     text-align: left;
     justify-content: center;
 
+    
 }
 .info_Header{
     text-align: center;
     font-size: 2em;
     text-decoration: underline;
-
 }
-
+.rectangle {
+    position: absolute;
+    background-color: green;
+  }
+  .square {
+    position: absolute;
+    background-color: red;
+  }
+  .circle {
+    position: absolute;
+    background-color: purple;
+    border-radius: 50%;
+  }
+  .triangle {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: solid  yellow;
+    border-right: solid transparent;
+  }

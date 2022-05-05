@@ -16,48 +16,48 @@
     <header class="header">Shape Up or Shape Out</header>
     <div class="container_1">
         <div class="input_div">
-            <div class="shape" id="rectangle">
+            <div class="shape" id="Rectangle">
                 <form class="forms">
                     <header class="shapeHeader">Rectangle</header>
-                    <p><input id="rect_Width" type="text" min="0" placeholder="Width"></p>
-                    <p><input id="rect_Height" type="text" min="0" placeholder="Height"></p>
+                    <p><input id="rect_Width" type="text" placeholder="Width"></p>
+                    <p><input id="rect_Height" type="text" placeholder="Height"></p>
                     <p><button class=" myButton" id="rect_Button" type="button">Create a Rectangle</button></p>
                 </form>
             </div>
-            <div class="shape" id="square">
+            <div class="shape" id="Square">
                 <form class="forms">
                     <header class="shapeHeader">Square</header>
-                    <p><input id="sq_Length" name="sq_Length" type="text" min="0" placeholder="Length"></p>
+                    <p><input id="sq_Length" name="sq_Length" type="text" placeholder="Length"></p>
                     <p><button class=" myButton" id="sq_Button" type="button">Create a Square</button></p>
                 </form>
             </div>
-            <div class="shape" id="circle">
+            <div class="shape" id="Circle">
                 <form class="forms">
                     <header class="shapeHeader">Circle</header>
-                    <p><input id="circ_Radius" name="circ_Radius" type="text" min="0" placeholder="Radius"></p>
+                    <p><input id="circ_Radius" name="circ_Radius" type="text" placeholder="Radius"></p>
                     <p><button class=" myButton" id="circ_Button" type="button">Create a Circle</button></p>
                 </form>
             </div>
             <div class="shape" id="Triangle">
                 <form class="forms">
                     <header class="shapeHeader">Triangle</header>
-                    <p><input id="tri_Heigh" name="tri_Height" type="text" min="0" placeholder="Height"></p>
+                    <p><input id="tri_Height" name="tri_Height" type="text" placeholder="Height"></p>
                     <p><button class=" myButton" id="tri_Button" type="button">Create a Triangle</button></p>
                 </form>
             </div>
         </div>
     </div>
     <div class="container_2">
-        <div class="drawing_board"></div>
+        <div class="drawing_board" id= "drawBoard"></div>
 
         <div class="shape_Info">
-            <P><header class="info_Header">Shape Information</header></P>
-            <p class="property">Shape Type: <span id="shape_Type"></span></p>
-            <p class="property">Width: <span id="shape_Width"></span></p>
-            <p class="property">Height: <span id="shape_Height"></span></p>
-            <p class="property">Radius: <span id="shape_Radius"></span></p>
-            <p class="property">Area: <span id="shape_Area"></span></p>
-            <p class="property">Perimeter: <span id="shape_Perimeter"></span></p>
+             <header class="info_Header">Shape Information</header>
+            <div class="property" id="shape_Type">Shape Type: </div>
+            <div class="property" id="shape_Width">Width: </div>
+            <div class="property" id="shape_Height">Height: </div>
+            <div class="property" id="shape_Radius">Radius: </div>
+            <div class="property" id="shape_Area">Area: </div>
+            <div class="property" id="shape_Perimeter">Perimeter: </div>
 
         </div>
     </div>
@@ -65,6 +65,11 @@
     <!--JavaScript Dependencies from code.jquery.com-->
     <script src="https://code.jquery.com/jquery-3.6.0.js"
         integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"
+        integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm"
+        crossorigin="anonymous"></script>
+
     <script src="apps.js"></script>
 </body>
 
